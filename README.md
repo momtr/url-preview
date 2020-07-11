@@ -12,7 +12,7 @@ Params:
 
 200 Success:
 
-    - obj {Object} object containing meta data for url
+    - obj {Object} object containing meta data for url(s)
 
 Example/Request:
 ```javascript
