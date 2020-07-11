@@ -1,0 +1,26 @@
+{
+  "name": "link-preview",
+  "version": "1.0.0",
+  "description": "preview for links",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "dev": "nodemon index.js",
+    "test": "mocha"
+  },
+  "keywords": [
+    "links",
+    "web-scraping"
+  ],
+  "author": "MM",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "get-urls": "^9.2.1",
+    "helmet": "^3.23.3",
+    "node-fetch": "^2.6.0"
+  }
+}
