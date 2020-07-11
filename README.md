@@ -16,8 +16,13 @@ Params:
 
 Example/Request:
 ```javascript
-let text = btoa('hello https://orf.at');
-let response = await fetch(`/api/v1/text/urls/meta?q=${text}`);
+// define text (e.g. user input)
+let text = 'hello https://orf.at';
+// convert text into a base64 string
+let base64_text = btoa(text);
+// call endpoint with text
+let response = await fetch(`/api/v1/text/urls/meta?q=${base64_text}`);
+// get JSON response
 let jsonResponse = await response.json();
 ```
 
