@@ -7,12 +7,21 @@
 *GET /api/v1/text/urls/meta?q={base64_encoded_text_body}*
 
 Params:
-    - q: {base64_string} base64 encoded text
-    
-200 Success:
-    - {Object} object containing meta data for url
 
-Example:
+    - q {base64_string} base64 encoded text
+
+200 Success:
+
+    - obj {Object} object containing meta data for url
+
+Example/Request:
+```javascript
+let text = btoa('hello https://orf.at');
+let response = await fetch(`/api/v1/text/urls/meta?q=${text}`);
+let jsonResponse = await response.json();
+```
+
+Example/Response:
 ```json
 {
     "message": "🚀 links given",
