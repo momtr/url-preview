@@ -1,5 +1,5 @@
 const express = require('express');
-const scraper = require('../scraper');
+const scraper = require('../lib/scraper');
 const getUrls = require('get-urls');
 
 const router = express.Router();
